@@ -12,7 +12,7 @@ args = {
 dag = DAG(
     dag_id='challenge_dag',
     default_args=args,
-    schedule_interval='5 * * * *'
+    schedule_interval='@hourly'
 )
 
 with dag:
